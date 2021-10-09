@@ -174,18 +174,17 @@ body{
 		margin: 0 1px;
 	}
 	.banner2 {
-		background: url(banner-sm.jpg);
+		background: url(banner-md.jpg);
 		background-repeat: no-repeat;
 	  background-attachment: fixed;
 	  background-position: center center;
 	  background-size: cover;
 	  background-color: #464646;
-	  height: 80vh;
 	}
 
 
 	.content{
-		height: 80vh;
+		height: 60vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
