@@ -91,8 +91,6 @@ body{
   background-color: #464646;
 }
 
-
-
 .content{
 	height: 100vh;
 	display: flex;
@@ -144,7 +142,37 @@ body{
 
 
 
+.banner3{
+	position: relative;
+}
 
+.banner3 img{
+	opacity: 0.6;
+}
+
+.bn3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+	text-shadow: 5px 5px 5px #ca2017;
+}
+
+.contact button{
+	font-size: 30px;
+	padding: 2px 20px;
+	background: #ca2017;
+	color: #ffffff;
+	border: 3px solid #ffffff;
+	border-radius: 30px;
+}
+
+.contact button:hover{
+	background: #ffffff;
+	color: #ca2017;
+	border: 5px solid #ca2017;
+}
 
 
 
@@ -181,8 +209,6 @@ body{
 	  background-size: cover;
 	  background-color: #464646;
 	}
-
-
 	.content{
 		height: 60vh;
 		display: flex;
@@ -204,6 +230,12 @@ body{
 		height: 40px;
 		padding-left: 0;
 		overflow: hidden;
+	}
+	.bn3{
+		font-size: calc(1.5rem + 1vw);
+	}
+	.contact button{
+		font-size: calc(0.8rem + 1vw);
 	}
 
 
@@ -232,7 +264,6 @@ body{
 		font-size: calc(0.5em + 1vw);
 		padding: calc(0.5em + 1vw);
 	}
-
 	.slider{
 		height: 50px;
 	}
