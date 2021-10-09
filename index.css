@@ -156,7 +156,7 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 60px;
-	text-shadow: 5px 5px 5px #ca2017;
+	text-shadow: 3px 3px 5px #ca2017;
 }
 
 .contact button{
@@ -171,7 +171,7 @@ body{
 .contact button:hover{
 	background: #ffffff;
 	color: #ca2017;
-	border: 5px solid #ca2017;
+	border: 3px solid #ca2017;
 }
 
 
