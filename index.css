@@ -192,7 +192,7 @@ body{
 		overflow: hidden;
 	}
 	.slider-wrapper{
-		font-size: calc(1rem + 1vw);;
+		font-size: calc(1.5rem + 1vw);;
 		color: #ffffff;
 		font-weight: bold;
 		text-transform: uppercase;
