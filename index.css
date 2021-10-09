@@ -192,7 +192,7 @@ body{
 		overflow: hidden;
 	}
 	.slider-wrapper{
-		font-size: calc(1.5rem + 1vw);;
+		font-size: calc(1.5rem + 1vw);
 		color: #ffffff;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -201,7 +201,7 @@ body{
 		margin-right: auto;
 	}
 	.slider{
-		height: 30px;
+		height: 40px;
 		padding-left: 0;
 		overflow: hidden;
 	}
@@ -221,11 +221,6 @@ body{
 	}
 	.right-heading img{
 		width: calc(0.5rem + 1vw);
-	}
-
-
-	.slider-wrapper{
-		font-size: calc(1.5rem + 1vw);
 	}
 }
 
