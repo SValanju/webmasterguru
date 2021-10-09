@@ -163,7 +163,7 @@ body{
 		display: none;
 	}
 	.left-heading{
-		font-size: calc(0.5rem + 1vw);
+		font-size: calc(0.7rem + 1vw);
 	}
 	.right-heading p{
 		font-size: calc(1rem + 1vw);
