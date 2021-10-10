@@ -140,8 +140,6 @@ body{
 	100% {margin-top: 0px;}
 }
 
-
-
 .banner3{
 	position: relative;
 }
@@ -173,6 +171,37 @@ body{
 	color: #ca2017;
 	border: 3px solid #ca2017;
 }
+
+
+.footer-nav{
+	padding-left: 0;
+}
+
+.row h6{
+	color: #ca2017;
+}
+
+.fnav-link{
+	list-style: none;
+	border-top: 2px solid #E0E0E0;
+	padding: 10px 0;
+}
+
+.fnav-link a{
+	color: #ca2017;
+}
+
+
+.fsi a{
+	color: #ca2017;
+	font-size: 30px;
+}
+
+.fsi a:hover{
+	opacity: 0.6;
+}
+
+
 
 
 
