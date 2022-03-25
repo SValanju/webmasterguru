@@ -403,6 +403,8 @@ a:active { text-decoration: none; }
 	}
 	#topBtn{
 		font-size: 30px;
+		bottom: 9px;
+		right: 9px;
 	}
 	.left-heading{
 		font-size: calc(0.7rem + 1vw);
