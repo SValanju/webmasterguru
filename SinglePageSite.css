@@ -258,7 +258,6 @@ button:focus{
 
 
 /* About Page  */
-
 .heading span{
 	font-size: 50px;
 	color: #ca2017;
@@ -341,7 +340,7 @@ button:focus{
 }
 
 .abt-content a{
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 
 
