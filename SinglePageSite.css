@@ -239,8 +239,10 @@ button:focus{
 	padding: 10px 0;
 }
 
-.fnav-link a{
+.fnav-link button{
 	color: #ca2017;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 
