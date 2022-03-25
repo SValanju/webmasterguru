@@ -402,9 +402,6 @@ a:active { text-decoration: none; }
 		border: none;
 	}
 	#topBtn{
-		top: 201px;
-		bottom: -102px;
-		right: 9px;
 		font-size: 30px;
 	}
 	.left-heading{
