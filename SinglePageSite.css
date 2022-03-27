@@ -72,6 +72,13 @@ button:focus{
 	border-bottom: 1px solid #ca2017;	
 }
 
+.navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
 
 
 /* Home Page */
