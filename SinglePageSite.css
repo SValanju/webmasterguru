@@ -75,7 +75,7 @@ button:focus{
 .navbar-toggler>.close {
     display:inline;
     color: #ca2017;
-    opacity: 9;
+    opacity: 1;
 }
 .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
     display:none;
