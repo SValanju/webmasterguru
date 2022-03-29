@@ -426,7 +426,7 @@ a:active { text-decoration: none; }
 		margin: 0 1px;
 	}
 	.banner2 {
-		background: url(/w3smclsmrv/banner-md.jpg);
+		background: url("/w3smclsmrv/banner-md.jpg");
 		background-repeat: no-repeat;
 	  background-attachment: fixed;
 	  background-position: center center;
