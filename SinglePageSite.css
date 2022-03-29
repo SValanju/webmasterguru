@@ -8,6 +8,24 @@ button:focus{
 	box-shadow: none !important;
 }
 
+/* Page Loader */
+#loading{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 99;
+}
+
+#loading-image{
+	z-index: 100;
+}
+
 /* Scroll to Top */
 #topBtn{
 	font-size: 40px;
@@ -408,6 +426,9 @@ a:active { text-decoration: none; }
 	}
 	.active{
 		border: none;
+	}
+	#loading-image{
+		height: 60px;
 	}
 	#topBtn{
 		font-size: 30px;
