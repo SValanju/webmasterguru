@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Webmaster Guru - Freelance web developer</title>
+	<link rel="icon" type="image/png" href="/w3smclsmrv/icon.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Sameer Valanju">
+	<meta name="description" content="Hello, I am Sameer. Freelance web developer based in Mumbai, India. I develop websites, web applications & desktop applications. Read More...">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+	<link rel="stylesheet" type="text/css" href="SinglePageSite.css">
+	<script src="https://kit.fontawesome.com/83772345fd.js" crossorigin="anonymous"></script>
+	<meta name="google-site-verification" content="HN3sjZJJ1uMoKqS2sqciIzc0clQ3oN8NIUNmnyxmeWU" />
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_oENVkaoiwYc4JGlqwk2R8");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        $("#contact-form")[0].reset();
+                        $('#CForm').modal('show')
+                        //alert("Form Sumbitted.")
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert("Some error occured. Please re-sumbit the form.")
+                	});
+            });
+        }
+    </script>
+</head>
+<body oncontextmenu="return false;">
+	
+	
+<!-- Page Loader -->
+	<div id="loading">
+		<img src="/w3smclsmrv/spinner.gif" id="loading-image" alt="Loading..." />
+	</div>
+
+
+<!-- Header & Navbar -->
+	
+	<div class="header text-center my-2">
+		<a href="https://www.facebook.com/sameer.valanju.5"><i class="bi bi-facebook mx-2"></i></a>
+		<a href="https://www.instagram.com/sameer_valanju"><i class="bi bi-instagram mx-2"></i></a>
+		<a href="https://twitter.com/sameer_valanju?t=B5abuSIde8vPvUd6HFEFMA&s=09"><i class="bi bi-twitter mx-2"></i></a>
+		<a href="https://www.linkedin.com/in/sameer-valanju-10873b19b"><i class="bi bi-linkedin mx-2"></i></a>
+		<a href="mailto:contact.webmasterguru@gmail.com"><i class="bi bi-envelope-fill mx-2"></i></a>
+	</div>
+
+	<nav class="navbar navbar-expand-lg bg-light navbar-light text-center">
+		<div class="row align-items-center">
+			<div class="col-md-6 col-9">
+				<a class="navbar-brand" href="https://webmasterguru.in/">
+					<img src="/w3smclsmrv/logo1.png" class="w-100">
+				</a>
+			</div>
+			<div class="col-md-6 col-3 text-right">
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="my-1 mx-2 close">X</span>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<!--<a class="nav-link px-3 mx-1 active" href="SinglePageSite.html">Home</a>-->
+					<button class="btn" onclick="window.location.href='https://webmasterguru.in/'">Home</button>
+				</li>
+				<li class="nav-item">
+					<!--<a class="nav-link px-3 mx-1" href="#AboutPage">About</a>-->
+					<button class="btn AboutBtn">About</button>
+				</li>
+				<li class="nav-item">
+					<!--<a class="nav-link px-3 mx-1" href="#ContactPage">Contact</a>-->
+					<button class="btn ContactBtn">Contact</button>
+				</li>
+			</ul>
+			<span class="si">
+				<a href="https://www.facebook.com/sameer.valanju.5"><i class="bi bi-facebook"></i></a>
+				<a href="https://www.instagram.com/sameer_valanju"><i class="bi bi-instagram"></i></a>
+				<a href="https://twitter.com/sameer_valanju?t=B5abuSIde8vPvUd6HFEFMA&s=09"><i class="bi bi-twitter"></i></a>
+				<a href="https://www.linkedin.com/in/sameer-valanju-10873b19b"><i class="bi bi-linkedin"></i></a>
+				<a href="mailto:contact.webmasterguru@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+			</span>
+		</div>
+		<div class="mx-3"></div>
+	</nav>
+
+
+<!-- Scroll To Top -->
+	<button type="button" class="btn" id="topBtn"><i class="fas fa-chevron-circle-up"></i></button>
+	
+
+<!-- Home Page Content -->
+
+	<div class="banner">
+		<img src="/w3smclsmrv/Banner-photoshoped.jpg" class="img-fluid">
+		<p class="left-heading">Develop<br>Websites &<br>Web Applications</p>
+		<div class="right-heading">
+			<p>Webmaster<br>Guru</p>
+			<img src="/w3smclsmrv/facebook.png" class="img-fluid">
+			<img src="/w3smclsmrv/instagram.png" class="img-fluid">
+			<img src="/w3smclsmrv/twitter.png" class="img-fluid">
+			<img src="/w3smclsmrv/linkedin.png" class="img-fluid">
+		</div>
+	</div>
+
+	<div class="banner1 my-5">
+		<div class="row m-0 align-items-center">
+			<div class="col-md-5 text-center me">
+				<img src="/w3smclsmrv/me.jpg" class="img-fluid w-75">
+			</div>
+			<div class="col-md-7 text-center text-white">
+				<div class="intro py-5">
+					<hr class="m-5">
+					<h1 class="mb-5 px-3">Welcome to Webmaster Guru</h1>
+					<h5 class="px-3 pb-3">Hello, I'm Sameer Valanju.<br>A web developer based in Mumbai, India.</h5>
+					<button class="btn AboutBtn">Read More >></button>
+					<hr class="m-5">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="banner2">
+		<div class="container content">
+			<div class="slider-wrapper"><span style="letter-spacing: 2px;">I develop</span>
+				<div class="slider">
+			        <div class="slider-text1"><span>Desktop Applications</span></div>
+			        <div class="slider-text2"><span>Web Applications</span></div>
+			        <div class="slider-text3"><span>Websites</span></div>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="banner3 my-5 bg-dark">
+		<img src="/w3smclsmrv/banner-1.jpg" class="img-fluid">
+		<div class="text-center text-white bn3">
+			<span>I'm available for Freelance.</span>
+			<div class="contact mt-3">
+				<button class="btn ContactBtn">Hire Me!</button>
+			</div>
+		</div>
+	</div>
+
+
+<!-- About Page Content -->
+	<div id="AboutPage">
+		<div class="heading text-center py-5">
+			<span>About Me</span>
+		</div><hr>
+
+		<div class="container cont1">
+			<div class="row align-items-center py-5">
+				<div class="col-md-5 text-center">
+					<img src="/w3smclsmrv/me3.jpeg" class="img-fluid rounded w-100" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+				</div>
+				<div class="col-md-7">
+					<h3 class="mt-5 mb-3">Hello, I'm Sameer Valanju.</h3>
+					<h5 class="mb-5 text-justify">I’ve good experience in designing and developing websites, web applications and desktop applications. Currently I’m working as Associate Consultant in an reputed Company. My 2+ years of working experience covers a wide variety of project scopes including product design, mobile apps, e-commerce websites and web applications.</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="container bg-light">
+			<div class="row skills py-5">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h1 class="pt-3 b">Coding Skills:</h1>
+					<div class="row pt-3">
+						<div class="col-md-6">
+							<h4 class="pt-3">C#, ASP.NET, MVC</h4>
+							<div class="bar learning"></div>
+							<h4 class="pt-3">Python</h4>
+							<div class="bar learning1"></div>
+							<h4 class="pt-3">HTML & CSS</h4>
+							<div class="bar learning2"></div>
+							<h4 class="pt-3">Javascript</h4>
+							<div class="bar learning3"></div>
+						</div>
+						<div class="col-md-6">
+							<h4 class="pt-3">MySQL, PostgreSQL</h4>
+							<div class="bar learning4"></div>
+							<h4 class="pt-3">Wordpress</h4>
+							<div class="bar learning5"></div>
+							<h4 class="pt-3">UI/UX</h4>
+							<div class="bar learning6"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+
+		<div class="abt-banner my-5">
+			<div class="container py-5">
+				<div class="abt-content text-white my-5">
+					<h1 class="text-center mb-5">Projects</h1>
+					<h3 class="pt-3">2021 :</h3><br>
+					<h4 style="letter-spacing: 1px;">Developed business website for ARV Relocations, India.</h4>
+					<div style="display: flex;" class="pb-5"><h5><i class="bi bi-globe2"></i></h5><h5 class="px-2"><a href="https://arvrelocations.com" class="text-white">arvrelocations.com</a></h5></div>
+					<h3 class="pt-3">2020 :</h3><br>
+					<h4 style="letter-spacing: 1px;">Developed E-Commerce website for Flying Fishmonger, India.</h4>
+					<div style="display: flex;" class="pb-5"><h5><i class="bi bi-globe2"></i></h5><h5 class="px-2"><a href="https://flyingfishmonger.com" class="text-white">flyingfishmonger.com</a></h5></div>
+					<h3 class="pt-3">2019 :</h3><br>
+					<h4 style="letter-spacing: 1px;">Developed consultancy website for Caspian Education, India.</h4>
+					<div style="display: flex;" class="mb-5"><h5><i class="bi bi-globe2"></i></h5><h5 class="px-2"><a href="https://caspianeduindia.com" class="text-white">caspianeduindia.com</a></h5></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container py-5">
+			<h1 class="text-center my-5">My Journey</h1>
+			<div class="card-columns pt-3">
+				<div class="card border-danger">
+					<div class="card-body">
+						<h4 class="card-title">Profession</h4>
+						<span class="font-weight-bold">Associate Consultant (Full Stack Developer)</span>
+			     		<p class="card-text">Developing and maintaining applications built using the .NET framework.</p>
+						<hr>
+						<span class="font-weight-bold">2 Years as a Programmer Analyst.</span>
+			     		<p class="card-text">Monitored technical aspects of the front-end & back-end system of projects.</p>
+			 	   	</div>
+				</div>
+				<div class="card border-danger">
+					<div class="card-body">
+						<h4 class="card-title">2021-2022</h4>
+						<span class="font-weight-bold">Full Stack Developer Course</span>
+			     		<p class="card-text">Coursework – HTML, CSS, Javascript, C#, ASP.NET, Web Services, MVC, SQL, Angular</p>
+			 	   	</div>
+				</div>
+			  	<div class="card border-danger">
+					<div class="card-body">
+						<h4 class="card-title">2021</h4>
+						<span class="font-weight-bold">Python Programming – Guvi.in</span>
+			     		<p class="card-text">Coursework – Python Basic to Advanced</p>
+			 	   	</div>
+				</div>
+				<div class="card text-white" style="background-color: #ca2017;">
+					<div class="card-body">
+						<h4 class="card-title text-center">Services</h4>
+						<div class="pl-3"><p><li>Web Hosting</li><li>WordPress Hosting</li><li>Logo Design</li><li>Modern & Mobile Ready</li><li>Graphics & Animations</li><li>Responsive Design</li></p></div>
+			 	   	</div>
+				</div>
+			  	<div class="card border-danger">
+					<div class="card-body">
+						<h4 class="card-title">2020</h4>
+						<span class="font-weight-bold">Bachelor of Science in Information Technology</span>
+			     		<p class="card-text">University of Mumbai, Maharashtra.</p>
+			 	   	</div>
+				</div>
+			  	<div class="card border-danger">
+					<div class="card-body">
+						<h4 class="card-title">2019</h4>
+						<span class="font-weight-bold">Programming Course – Coursera.org</span>
+			     		<p class="card-text">Coursework – Git, HTML, CSS, Javascript</p>
+			 	   	</div>
+				</div>
+				<div class="card border-danger">
+					<div class="card-body text-center">
+						<h4 class="card-title">2018</h4>
+						<span class="font-weight-bold">WordPress Developer</span>
+			 	   	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Contact Page Content -->
+
+	<div id="ContactPage">
+		<div class="modal" id="CForm">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header alert-success">
+						<h5 class="modal-title">Thank you for contacting us!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Your form has been submitted successfully.</p>
+						<p>We will get back to you ASAP !</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr><div class="heading text-center py-5">
+			<span>Contact Me</span>
+		</div><hr>
+
+		<div class="background">
+			<div class="container py-5">
+				<h4 class="text-center ctr-head">Don’t hesitate to reach out with the contact information below, you can send a message using the form.</h4>
+				<div class="row align-items-center">
+					<div class="col-md-6 my-5 text-center">
+						<img src="/w3smclsmrv/contact.webp" class="img-fluid rounded-circle">
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-4 my-5">
+						<div class="card p-3 frm-crd">
+							<form id="contact-form">
+								<div class="form-group">
+									<label for="formGroupExampleInput">Name :</label>
+									<input type="text" class="form-control" name="user_name" placeholder="Enter your full name" required>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Email address :</label>
+									<input type="email" class="form-control" name="user_email" aria-describedby="emailHelp" placeholder="Enter your email id" required>
+									<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+								</div>
+								<div class="form-group">
+									<label for="exampleFormControlTextarea1">Message :</label>
+									<textarea class="form-control" name="message" rows="5" placeholder="Enter your queries here..." required></textarea>
+								</div>
+								<button type="submit" class="btn send">Send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container my-5 py-5">
+			<h1 class="text-center mb-5">Let's Connect</h1>
+			<div class="card-deck">
+				<div class="card align-items-center py-5 sicard">
+					<a href="https://www.facebook.com/sameer.valanju.5">
+						<img src="/w3smclsmrv/fb.png" class="w-50">
+						<h4 class="mt-3">Facebook</h4>
+					</a>
+				</div>
+				<div class="card align-items-center py-5 sicard">
+					<a href="https://www.instagram.com/sameer_valanju">
+						<img src="/w3smclsmrv/insta.png" class="w-50">
+						<h4 class="mt-3">Instagram</h4>
+					</a>
+				</div>
+				<div class="card align-items-center py-5 sicard">
+					<a href="https://twitter.com/sameer_valanju?t=B5abuSIde8vPvUd6HFEFMA&s=09">
+						<img src="/w3smclsmrv/tweet.png" class="w-50">
+						<h4 class="mt-3">Twitter</h4>
+					</a>
+				</div>
+				<div class="card align-items-center py-5 sicard">
+					<a href="https://www.linkedin.com/in/sameer-valanju-10873b19b">
+						<img src="/w3smclsmrv/in.png" class="w-50">
+						<h4 class="mt-3">Linkedin</h4>
+					</a>
+				</div>
+				<div class="card align-items-center py-5 sicard">
+					<a href="mailto:contact.webmasterguru@gmail.com">
+						<img src="/w3smclsmrv/email.png" class="w-50">
+						<h4 class="mt-3">Email</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Footer -->
+
+	<div class="footer my-5 pt-3">
+		<hr>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 py-5">
+					<h3>Hours Info:</h3>
+					<br>
+					<h5 class="mb-2">Monday to Friday,</h5>
+					<h6>6 AM to 9 AM</h6>
+					<h6>7 PM to 12 AM</h6>
+					<br>
+					<h5 class="mb-2">Saturday & Sunday,</h5>
+					<h6>8 AM to 11 PM</h6>
+				</div>
+				<div class="col-md-4 py-5">
+					<h3>Menu:</h3>
+					<br>
+					<ul class="footer-nav">
+						<li class="fnav-link">
+							<button class="btn" onclick="window.location.href='https://webmasterguru.in/'">Home</button>
+						</li>
+						<li class="fnav-link">
+							<button class="btn AboutBtn">About</button>
+						</li>
+						<li class="fnav-link">
+							<button class="btn ContactBtn">Contact</button>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 py-5">
+					<h3>Follow Me:</h3>
+					<div class="fsi">
+						<a href="https://www.facebook.com/sameer.valanju.5"><i class="bi bi-facebook mx-2"></i></a>
+						<a href="https://www.instagram.com/sameer_valanju"><i class="bi bi-instagram mx-2"></i></a>
+						<a href="https://twitter.com/sameer_valanju?t=B5abuSIde8vPvUd6HFEFMA&s=09"><i class="bi bi-twitter mx-2"></i></a>
+						<a href="https://www.linkedin.com/in/sameer-valanju-10873b19b"><i class="bi bi-linkedin mx-2"></i></a>
+						<a href="mailto:contact.webmasterguru@gmail.com"><i class="bi bi-envelope-fill mx-2"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<h6 class="text-muted text-center my-5">Copyright &copy; 2021 Webmaster Guru. All rights reserved.</h6>
+	</div>
+	
+
+
+<script type="text/javascript">
+	/* Page Loader */
+		$(window).on('load', function(){
+			$('#loading').hide();
+		})	
+	
+	/* Scroll to Top */
+		//Get the button
+		let mybutton = document.getElementById("topBtn");
+
+		// When the user scrolls down 30px from the top of the document, show the button
+		window.onscroll = function () {
+		  scrollFunction();
+		};
+
+		function scrollFunction() {
+		  if (document.documentElement.scrollTop > 30) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		mybutton.addEventListener("click", backToTop);
+
+		function backToTop() {
+		  document.documentElement.scrollTop = 0;
+		}
+
+
+	/* About Page */
+		$(".AboutBtn").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#AboutPage").offset().top},
+		        'slow');
+		});
+
+
+	/* Contact Page */
+		$(".ContactBtn").click(function() {
+		    $('html,body').animate({
+		        scrollTop: $("#ContactPage").offset().top},
+		        'slow');
+		});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</script>
+</body>
+</html>
