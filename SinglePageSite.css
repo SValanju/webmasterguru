@@ -114,7 +114,9 @@ button:focus{
 	position: absolute;
 	top: 40%;
 	left: 5%;
-	/* font-family: 'Kavoon', cursive; */
+	font-family: 'Kavoon', cursive;
+}
+.left-heading .wrap {
 	font-family: 'Space Mono', monospace;
 }
 
@@ -162,11 +164,11 @@ button:focus{
 
 .banner2{
 	background-image: url("/w3smclsmrv/banner.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-color: #464646;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	background-color: #464646;
 }
 
 .content{
@@ -219,7 +221,13 @@ button:focus{
 }
 
 .banner3{
-	position: relative;
+	/* position: relative; */
+	background: url("/w3smclsmrv/banner-1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	background-color: #464646;
 }
 
 .banner3 img{
@@ -227,10 +235,10 @@ button:focus{
 }
 
 .bn3{
-	position: absolute;
+	/* position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
 	background-color: rgba(0,0,0,.7);
 }
 .bn3Head {
@@ -456,13 +464,20 @@ a:active { text-decoration: none; }
 		width: calc(0.5rem + 1vw);
 		margin: 0 1px;
 	}
+	#btnConnect {
+		font-size: calc(0.5rem + 1vw);
+	}
+	#btnConnect img {
+		width: 20px;
+	}
+
 	.banner2 {
 		background: url("/w3smclsmrv/banner-md.jpg");
 		background-repeat: no-repeat;
-	  background-attachment: fixed;
-	  background-position: center center;
-	  background-size: cover;
-	  background-color: #464646;
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		background-color: #464646;
 	}
 	.content{
 		height: 60vh;
@@ -488,6 +503,16 @@ a:active { text-decoration: none; }
 	}
 	.bn3{
 		font-size: calc(1.5rem + 1vw);
+		width: 95% !important;
+	}
+	.bn3Head {
+		font-size: calc(1.5rem + 1vw);
+	}
+	.bn3 h3 {
+		padding: 0 10px !important;
+	}
+	.bn3 h3 p {
+		font-size: 0.9rem
 	}
 	.contact button{
 		font-size: calc(0.8rem + 1vw);
