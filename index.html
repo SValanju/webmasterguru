@@ -15,33 +15,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 	<link rel="stylesheet" type="text/css" href="SinglePageSite.css">
 	<script src="https://kit.fontawesome.com/83772345fd.js" crossorigin="anonymous"></script>
-	<meta name="google-site-verification" content="HN3sjZJJ1uMoKqS2sqciIzc0clQ3oN8NIUNmnyxmeWU" />
 
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_oENVkaoiwYc4JGlqwk2R8");
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                        $("#contact-form")[0].reset();
-                        $('#CForm').modal('show')
-                        //alert("Form Sumbitted.")
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                        alert("Some error occured. Please re-sumbit the form.")
-                	});
-            });
-        }
-    </script>
 </head>
 <body oncontextmenu="return false;">
 	
