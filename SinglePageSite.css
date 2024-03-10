@@ -163,7 +163,7 @@ button:focus{
 }
 
 .banner2{
-	background-image: url("/w3smclsmrv/banner.jpg");
+	background-image: url("w3smclsmrv/banner.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -222,7 +222,7 @@ button:focus{
 
 .banner3{
 	/* position: relative; */
-	background: url("/w3smclsmrv/banner-1.jpg");
+	background: url("w3smclsmrv/banner-1.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -371,7 +371,7 @@ button:focus{
 }
 
 .abt-banner{
-	background-image: url("/w3smclsmrv/abc.jpg");
+	background-image: url("w3smclsmrv/abc.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -472,7 +472,7 @@ a:active { text-decoration: none; }
 	}
 
 	.banner2 {
-		background: url("/w3smclsmrv/banner-md.jpg");
+		background: url("w3smclsmrv/banner-md.jpg");
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center center;
